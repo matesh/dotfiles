@@ -4,6 +4,7 @@ set rtp+=~/.vim/bundle/Vundle.vim
 call vundle#begin()
 Plugin 'VundleVim/Vundle.vim'
 Plugin 'christoomey/vim-tmux-navigator'
+Plugin 'vim-airline/vim-airline'
 call vundle#end()
 
 colorscheme badwolf
@@ -24,8 +25,10 @@ set hlsearch
 set foldenable
 set foldlevelstart=10
 set foldmethod=indent
+set laststatus=2
 
 let mapleader=","
+let g:airline_powerline_fonts = 1
 
 nnoremap <leader>n :call ToggleNumber()<CR>
 nnoremap <leader><space> :nohlsearch<CR>
